@@ -1,9 +1,209 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head></head>
 <title>Red Ball Part 1</title>
 <script src="http://lrn.icstars.org/redball.js"></script>
 <script>
+
+function movetriangle()
+{
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+}
+
+
+function movediamond()
+{
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+}
+
+
+function moveopenend()
+
+{
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+
+
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function moveleft()
 {
@@ -33,31 +233,32 @@ alert("Hello Robert Patenoude")
 function movesquare()
 {
 <!--right-->
-redball.left=redball.left + 5;
-redball.left=redball.left + 5;
-redball.left=redball.left + 5;
-redball.left=redball.left + 5;
-redball.left=redball.left + 5;
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
 <!--down-->
-redball.top=redball.top + 5;
-redball.top=redball.top + 5;
-redball.top=redball.top + 5;
-redball.top=redball.top + 5;
-redball.top=redball.top + 5;
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
 <!--left-->
-redball.left=redball.left - 5;
-redball.left=redball.left - 5;
-redball.left=redball.left - 5;
-redball.left=redball.left - 5;
-redball.left=redball.left - 5;
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
 <!--up-->
-redball.top=redball.top - 5;
-redball.top=redball.top - 5;
-redball.top=redball.top - 5;
-redball.top=redball.top - 5;
-redball.top=redball.top - 5;
-
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
 }
+<!--be careful of drifting-->
+
 </script>
 </head>
 <body>
@@ -67,6 +268,10 @@ redball.top=redball.top - 5;
 <button onclick="moveleft();">moveleft</button>
 <button onclick="moveup();">moveup</button>
 <button onclick="movesquare();">movesquare</button>
+<button onclick="movediamond();">movediamond</button>
+<button onclick="movetriangle();">movetriangle</button>
+<button onclick="moveopenend();">moveopenend</button>
+
 <img src="redball.jpg"id="redball"/>
 
 </body>
